@@ -9,7 +9,7 @@ conda (recommended)
 
 1. Environment Setup
 Create and activate a conda environment:
-bashconda create -n spam-detector python=3.9
+bashconda create -n spam-detector python=3.13.7 (if you want it like me)
 conda activate spam-detector
 Install required packages:
 bashpip install pandas numpy scikit-learn matplotlib seaborn wordcloud jupyter
@@ -18,8 +18,6 @@ bashpip install pandas numpy scikit-learn matplotlib seaborn wordcloud jupyter
 I placed the raw datasets in the data/raw/ folder
 
 3. Running the Notebooks
-Launch Jupyter:
-bashjupyter notebook
 Run the notebooks in order for each datase. Must run in order if not it will be error.
 Spam
 notebooks/spam/1_spam_data_processing.ipynb   for clean & process data
@@ -60,7 +58,7 @@ URL Classification
 
 Input: Raw URL string
 Method: Structural feature extraction (14 numeric features)
-Algorithms compared: Random Forest vs Gradient Boosting
+Algorithms used: Random Forest vs Kmeans
 Task: Multi-class classification benign/defacement/phishing/malware
 
 
